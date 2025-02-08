@@ -29,10 +29,12 @@ SMTP for email alerts
 Arduino IDE for ESP32 programming
 
 Block diagram:
-![WhatsApp Image 2025-02-08 at 18 41 09_62ef361a](https://github.com/user-attachments/assets/62377930-2f95-433d-96c2-44449fb7bc3a)
+![WhatsApp Image 2025-02-08 at 18 45 24_ab1aa1fc](https://github.com/user-attachments/assets/8e20ecc0-d6d7-495d-9439-99196435a508)
+
 
 Schematic diagram:
-![WhatsApp Image 2025-02-08 at 18 40 53_23de9f62](https://github.com/user-attachments/assets/e6f65ed6-da2f-4f4b-bed7-46ec5f9d78b2)
+![WhatsApp Image 2025-02-08 at 18 45 22_c774c6bd](https://github.com/user-attachments/assets/27b4cbb8-ccac-4a69-a0ed-5614dee5c1b6)
+
 
 
 
