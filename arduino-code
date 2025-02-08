@@ -1,0 +1,35 @@
+// orginal arduino code may be different provdided code is just a refrence , you may need to make some changes 
+// Define pins for solenoid lock and LEDs
+int solenoidPin = 2; // Adjust pin numbers as needed
+int redLEDPin = 4;
+int greenLEDPin = 5;
+
+void setup() {
+  pinMode(solenoidPin, OUTPUT);
+  pinMode(redLEDPin, OUTPUT);
+  pinMode(greenLEDPin, OUTPUT);
+
+  // Default state: lock engaged, red LED on
+  digitalWrite(solenoidPin, LOW); // Solenoid off (locked)
+  digitalWrite(redLEDPin, HIGH);  // Red LED on
+  digitalWrite(greenLEDPin, LOW); // Green LED off
+
+  Serial.begin(115200);
+}
+
+void loop() {
+  if (Serial.available() > 0) {
+    String command = Serial.readStringUntil('\n');
+
+    if (command == "GRANTED") {
+      digitalWrite(solenoidPin, HIGH); // Solenoid on (unlocked)
+      digitalWrite(redLEDPin, LOW);    // Red LED off
+      digitalWrite(greenLEDPin, HIGH); // Green LED on
+    } 
+    else if (command == "LOCK") {
+      digitalWrite(solenoidPin, LOW);  // Solenoid off (locked)
+      digitalWrite(redLEDPin, HIGH);   // Red LED on
+      digitalWrite(greenLEDPin, LOW);  // Green LED off
+    }
+  }
+}
