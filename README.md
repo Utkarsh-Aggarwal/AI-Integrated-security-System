@@ -28,6 +28,11 @@ Serial Communication (pyserial)
 SMTP for email alerts
 Arduino IDE for ESP32 programming
 
+Block diagram:
+![Screenshot 2025-02-08 154344-Photoroom (1)](https://github.com/user-attachments/assets/4cc64374-5fbd-4bb7-8b0a-1cdd60b00bc8)
+
+
+
 📂 Facial-Recognition-Security-System  
  ├── 📁 face_data/              # Stored face images  
  ├── 📜 security_system.py      # Python script for face recognition & authentication  
